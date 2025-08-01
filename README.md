@@ -1,40 +1,39 @@
-# BookAPI
+# Book API
 
-Una API REST  desarrollada con Spring Boot para ver el catálogo digital de libros de la editorial  "Letras Vivas"
+A REST API developed with Spring Boot to view the digital catalog of books from the "Letras Vivas" publishing house.
 
-##  Funcionalidades
+## Features
 
-- Listar todos los libros
-- Agregar un nuevo libro
-- Buscar libros por título
-- Eliminar un libro por su ID
+- List all books  
+- Add a new book  
+- Search books by title  
+- Delete a book by its ID  
 
-## Tecnologías utilizadas
+## Technologies Used
 
-- Java 17
-- Spring Boot
-- Spring Data JPA
-- H2 (base de datos en memoria)
+- Java 17  
+- Spring Boot  
+- Spring Data JPA  
+- H2 (in-memory database)  
 
-## ¿Cómo ejecutar el proyecto?
+## How to Run the Project?
 
-1. Clonar este repositorio
-2. Abrirlo con IntelliJ IDEA
-3. Ejecutar la clase `BookapiApplication.java`
-4. Utilizar Postman u otro cliente REST para probar los endpoints
+1. Clone this repository  
+2. Open it in IntelliJ IDEA  
+3. Run the `BookapiApplication.java` class  
+4. Use Postman or another REST client to test the endpoints  
 
-##  Endpoints disponibles
+## Available Endpoints
 
-| Método | URL                          | Descripción               |
-|--------|------------------------------|---------------------------|
-| GET    | `/books`                     | Lista todos los libros    |
-| POST   | `/books`                     | Agrega un nuevo libro     |
-| GET    | `/books/search?title=texto`  | Busca libros por título   |
-| DELETE | `/books/{id}`                | Elimina un libro por ID   |
+| Method | URL                                 | Description             |
+|--------|-------------------------------------|-------------------------|
+| GET    | `/books`                            | List all books          |
+| POST   | `/books`                            | Add a new book          |
+| GET    | `/books/search?title=your-title`    | Search books by title   |
+| DELETE | `/books/{id}`                       | Delete a book by ID     |
 
+> Only visible if at least one book has already been inserted into the database.
 
-> Solo es visible si ya insertaste al menos un libro en la base de datos.
+## Author
 
-## Autor
-
-- Marlon Omar Guzman Mejia - GM190258
+- Marlon Omar Guzmán Mejía - GM190258
